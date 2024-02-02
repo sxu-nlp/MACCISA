@@ -2,19 +2,19 @@
 
 ##  Introduction
 
-We designed the MACCISA model,it contains three parts:  
-1. We first obtain multimodal semantic matrices by means of adapted macromodels.
+We designed the MACCISA model, it contains three parts:  
+1. We first obtain multimodal semantic matrices utilizing adapted macromodels.
 
 2. We use multiple adapted models to obtain common-sense knowledge representations.
 
-3. We use the multi-head attention mechanism and the adapter mechanism to merge and learn from the obtained multimodal semantic matrices.
+3. We use the multi-head attention mechanism and the adapter layer to merge and learn from the obtained multimodal semantic matrices.
 
+4. Due to the large size of the dataset and multimodal commonsense knowledge graph files, we will release the web address after the anonymous review period.
 
-
-## Enviroment Requirement
+## Environment Requirement
 
 `pip install -r requirements.txt`
-In addition to this make sure you have the Chatglm-6b model in your runtime environment.
+Also, please make sure you have the Chatglm-6b model in your runtime environment.
 
 ## Dataset
 
@@ -26,7 +26,7 @@ The corresponding node number sequences for the one-hop and two-hop dependencies
 
 
 ## Modification of the Chatglm-6b model
-Firstly replace `.. /ChatGLM-6B-main/chatglm-6b/modelling_chatglm.py` with the chat function in `modelling_chatglm_c.py` that we provided. Also replace the utils.py file where **the generate function is located** in modeling_chatglm.py with the `utils_C.py` file we provided.
+Firstly replace `.. /ChatGLM-6B-main/chatglm-6b/modelling_chatglm.py` with the chat function in `modelling_chatglm_c.py` that we provided. Also, replace the utils.py file where **the generate function is located** in modeling_chatglm.py with the `utils_C.py` file we provided.
 
 ## An example to  run the model
 Using Chinese dataset and Chinese one-hop data:
@@ -39,7 +39,7 @@ Change `node_vectors_path、picture_vectors_path` in `model.py` using `ch_embedd
 
  * Modify node demarcation number
     Change `demarcation_num` in `model.py`.If you are using the Chinese dataset, you should set it to **11386**. If you are using the English dataset, you should set it to **30432**.
-	(*This parameter represents the number of word nodes and is used to distinguish word nodes and picture nodes.*)
+	(*This parameter represents the number of word nodes and distinguishes word nodes and picture nodes.*)
 	
 	
  * Run the model
