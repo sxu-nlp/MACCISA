@@ -22,7 +22,7 @@ We provide a processed English dataset and a Chinese one.
 The corresponding node number sequences for the one-hop and two-hop dependencies of the relevant desired knowledge graph nodes in the dataset sentences are also provided.
 `one-hop_ch.xlsx/one-hop_en.xlsx` and `two-hop_ch.xlsx/two-hop_en.xlsx`
 
-Due to the large size of the dataset and multimodal commonsense knowledge graph files, we will release the web address after the anonymous review period.
+Due to the large size of the dataset and multimodal commonsense knowledge graph files, we will release the download address after the review period.
 
 
 ## Modification of the Chatglm-6b model
