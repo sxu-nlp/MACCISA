@@ -1,1 +1,1 @@
-Please see the descrptions in README_new.MD
+Please see the descriptions in README_new.md
